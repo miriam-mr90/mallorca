@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Raleway', sans-serif;
         font-size: 14px;
-        background: ${props => props.theme.color.main};
+        background-image: linear-gradient(62deg, rgb(233, 121, 112),rgb(213, 192, 80));
         color: ${props => props.theme.color.text};
         margin: 0;
     }
