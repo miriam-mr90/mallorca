@@ -44,14 +44,12 @@ export default class App extends Component {
 
     render() {
         return (
-            <>
-                <Layout
-                    {...this.props}
-                    {...this.state}
-                    showMainContent={this.showMainContent}
-                    filterCategories={this.filterCategories}
-                />
-            </>
+            <Layout
+                {...this.props}
+                {...this.state}
+                showMainContent={this.showMainContent}
+                filterCategories={this.filterCategories}
+            />
         );
     }
 }
