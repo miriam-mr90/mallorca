@@ -24,6 +24,12 @@ const FONT_RULES = {
 };
 
 module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve('build'),
+        publicPath: '/'
+    },
     module: {
         rules: [
             IMAGES_RULES,
