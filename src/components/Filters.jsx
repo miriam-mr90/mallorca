@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import Select from './Select.jsx';
 
 const StyledFilters = styled.div`
     color: ${props => props.theme.color.neutral000};
@@ -11,13 +12,10 @@ const Filters = ({ filters, filterCategories }) => (
     <StyledFilters>
         {Object.keys(filters).map((objectKey, index) => (
             <div key={index}>
-                {objectKey}
-                <select onChange={e => filterCategories(objectKey, e.target.value)}>
-                    <option value='all'>All</option>
-                    {filters[objectKey].map((item, index) => (
-                        <option key={index} value={item}>{item}</option>
-                    ))}
-                </select>
+                <Select filters={filters}
+                    filterCategories={filterCategories}
+                    objectKey={objectKey}
+                />
             </div>
         ))}
     </StyledFilters>

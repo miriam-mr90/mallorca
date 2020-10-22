@@ -28,6 +28,15 @@ module.exports = {
                     isFavorite: true,
                 },
                 {
+                    name: 'Cala Figuera',
+                    description: 'Lorem ipsum',
+                    mapLocation: 'locationnnnn',
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    type: 'cove',
+                    features: ['snorkel'],
+                    isFavorite: true,
+                },
+                {
                     name: 'Cala Varques',
                     description: 'Lorem ipsum',
                     mapLocation: 'locationnnnn',
@@ -56,7 +65,7 @@ module.exports = {
             label: 'food',
             icon: 'food',
             filters: {
-                type: ['mexican', 'chiringuito'],
+                type: ['aaa', 'mexican', 'chiringuito'],
             },
             items: [
                 {
@@ -72,7 +81,7 @@ module.exports = {
                     name: 'Buscando el norte',
                     description: 'Lorem ipsum',
                     where: 'Palma',
-                    mapLocation: 'locationnnnn',
+                    mapLocation: 'Carrer de Sant Miquel, 77, 07002 Palma, Illes Balears',
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     type: ['aaa', 'ccc'],
                     isFavorite: false,
@@ -102,6 +111,22 @@ module.exports = {
                     mapLocation: 'locationnnnn',
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     type: ['mexican'],
+                },
+                {
+                    name: 'Primo taquería',
+                    description: 'Lorem ipsum',
+                    where: 'Palma',
+                    mapLocation: 'C. de la Fàbrica, 29, 07013 Palma, Illes Balears',
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    type: ['mexican'],
+                },
+                {
+                    name: 'Spot',
+                    description: 'Lorem ipsum',
+                    where: 'Plaça de la Verge del Miracle, 3, 07013 Palma, Illes Balears',
+                    mapLocation: 'C. de la Fàbrica, 29, 07013 Palma, Illes Balears',
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    type: ['aaa'],
                 },
             ],
         },
