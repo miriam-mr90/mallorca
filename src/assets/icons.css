@@ -25,6 +25,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .icon-pin:before {
+    content: "\e906";
+  }
   .icon-boat:before {
     content: "\e900";
   }

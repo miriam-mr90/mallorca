@@ -8,7 +8,7 @@ const StyledMenu = styled.div`
     margin-bottom: 20px;
 `;
 
-const StyledCard = styled.div`
+const StyledMenuItem = styled.div`
     background: ${props => props.theme.color.neutral000};
     border-radius: 4px;
     box-shadow: -1px 1px 2px rgba(18,42,68,0.1);
@@ -48,13 +48,13 @@ const StyledCard = styled.div`
 const Menu = ({ categories, selectedMenuItem, showMainContent }) => (
     <StyledMenu>
         {categories.map((item, index) => (
-            <StyledCard key={index}
+            <StyledMenuItem key={index}
                 item={item}
                 onClick={() => showMainContent(item.label)}
                 active={selectedMenuItem === item.label}>
                 <i className={`icon icon-${item.icon}`} />
                 {item.name}
-            </StyledCard>
+            </StyledMenuItem>
         ))}
     </StyledMenu>
 );

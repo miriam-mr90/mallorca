@@ -19,10 +19,10 @@ const StyledSelect = styled.div`
     }
 `;
 
-const Select = ({ filters, filterCategories, objectKey }) => (
+const Select = ({ filters, onChangeMethod, objectKey }) => (
     <StyledSelect>
         <span>{objectKey}</span>
-        <select onChange={e => filterCategories(objectKey, e.target.value)}>
+        <select onChange={e => onChangeMethod(objectKey, e.target.value)}>
             <option value='all'>All</option>
             {filters[objectKey].map((item, index) => (
                 <option key={index} value={item}>{item}</option>

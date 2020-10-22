@@ -13,16 +13,24 @@ module.exports = {
                 {
                     name: 'Es Trenc',
                     description: 'Lorem ipsum',
-                    mapLocation: 'locationnnnn',
-                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    where: {
+                        address: '',
+                        city: '',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'es_trenc',
                     type: 'beach',
                     isFavorite: true,
                 },
                 {
                     name: 'Cala Tuent',
                     description: 'Lorem ipsum',
-                    mapLocation: 'locationnnnn',
-                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    where: {
+                        address: '',
+                        city: '',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'cala_tuent',
                     type: 'cove',
                     features: ['snorkel'],
                     isFavorite: true,
@@ -30,8 +38,12 @@ module.exports = {
                 {
                     name: 'Cala Figuera',
                     description: 'Lorem ipsum',
-                    mapLocation: 'locationnnnn',
-                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    where: {
+                        address: '',
+                        city: '',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'cala_figuera',
                     type: 'cove',
                     features: ['snorkel'],
                     isFavorite: true,
@@ -39,8 +51,12 @@ module.exports = {
                 {
                     name: 'Cala Varques',
                     description: 'Lorem ipsum',
-                    mapLocation: 'locationnnnn',
-                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    where: {
+                        address: '',
+                        city: '',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'cala_varques',
                     type: 'cove',
                     isFavorite: false,
                 }
@@ -54,9 +70,12 @@ module.exports = {
                 {
                     name: 'Sant Elm',
                     description: 'Lorem ipsum',
-                    where: 'Andratx',
-                    mapLocation: 'locationnnnn',
-                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    where: {
+                        address: '',
+                        city: 'Andratx',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'sant_elm',
                 },
             ],
         },
@@ -71,17 +90,23 @@ module.exports = {
                 {
                     name: 'Patrón Lunares',
                     description: 'Lorem ipsum',
-                    where: 'Palma',
-                    mapLocation: 'locationnnnn',
-                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    where: {
+                        address: '',
+                        city: 'Palma',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'patron_lunares',
                     type: ['aaa', 'bbb'],
                     isFavorite: true,
                 },
                 {
                     name: 'Buscando el norte',
                     description: 'Lorem ipsum',
-                    where: 'Palma',
-                    mapLocation: 'Carrer de Sant Miquel, 77, 07002 Palma, Illes Balears',
+                    where: {
+                        address: 'Carrer de Sant Miquel, 77, 07002 Palma, Illes Balears',
+                        city: 'Palma',
+                        mapLocation: 'https://goo.gl/maps/8xLpV8JckuE7y6QY8',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     type: ['aaa', 'ccc'],
                     isFavorite: false,
@@ -89,8 +114,11 @@ module.exports = {
                 {
                     name: 'Es Vergeret',
                     description: 'Lorem ipsum',
-                    where: 'Cala Tuent',
-                    mapLocation: 'locationnnnn',
+                    where: {
+                        address: '',
+                        city: 'Cala Tuent',
+                        mapLocation: 'locationnnnn',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     type: ['aaa', 'ccc'],
                     isFavorite: false,
@@ -98,8 +126,11 @@ module.exports = {
                 {
                     name: 'Bar Esperanza',
                     description: 'Lorem ipsum',
-                    where: 'Ses Covetes',
-                    mapLocation: 'locationnnnn',
+                    where: {
+                        address: '',
+                        city: 'Ses Covetes',
+                        mapLocation: 'locationnnnn',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     type: ['chiringuito'],
                     isFavorite: true,
@@ -107,24 +138,33 @@ module.exports = {
                 {
                     name: 'Aquanauta',
                     description: 'Lorem ipsum',
-                    where: 'Palma',
-                    mapLocation: 'locationnnnn',
+                    where: {
+                        address: '',
+                        city: 'Palma',
+                        mapLocation: 'locationnnnn',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     type: ['mexican'],
                 },
                 {
                     name: 'Primo taquería',
                     description: 'Lorem ipsum',
-                    where: 'Palma',
-                    mapLocation: 'C. de la Fàbrica, 29, 07013 Palma, Illes Balears',
+                    where: {
+                        address: 'C. de la Fàbrica, 29, 07013 Palma, Illes Balears',
+                        city: 'Palma',
+                        mapLocation: '',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     type: ['mexican'],
                 },
                 {
                     name: 'Spot',
                     description: 'Lorem ipsum',
-                    where: 'Plaça de la Verge del Miracle, 3, 07013 Palma, Illes Balears',
-                    mapLocation: 'C. de la Fàbrica, 29, 07013 Palma, Illes Balears',
+                    where: {
+                        address: 'Plaça de la Verge del Miracle, 3, 07013 Palma, Illes Balears',
+                        city: 'Palma',
+                        mapLocation: '',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     type: ['aaa'],
                 },
@@ -138,21 +178,31 @@ module.exports = {
                 {
                     name: 'Cap de Formentor',
                     description: 'Lorem ipsum',
-                    mapLocation: 'locationnnnn',
+                    where: {
+                        address: '',
+                        city: '',
+                        mapLocation: 'locationnnnn',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                 },
                 {
                     name: 'Catedral de Palma',
                     description: 'Lorem ipsum',
-                    where: 'Palma',
-                    mapLocation: 'locationnnnn',
+                    where: {
+                        address: '',
+                        city: 'Palma',
+                        mapLocation: 'locationnnnn',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                 },
                 {
                     name: 'Puerto de Soller',
                     description: 'Lorem ipsum',
-                    where: 'Soller',
-                    mapLocation: 'locationnnnn',
+                    where: {
+                        address: '',
+                        city: 'Soller',
+                        mapLocation: 'locationnnnn',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                 },
             ],
@@ -163,20 +213,23 @@ module.exports = {
             icon: 'boat',
             items: [
                 {
-                    name: 'Boats',
-                    description: 'Lorem ipsum',
-                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
-                },
-                {
                     name: 'SUP',
                     description: 'Lorem ipsum',
-                    mapLocation: 'locationnnnn',
+                    where: {
+                        address: '',
+                        city: '',
+                        mapLocation: 'locationnnnn',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                 },
                 {
                     name: 'theatre',
                     description: 'Lorem ipsum',
-                    mapLocation: 'locationnnnn',
+                    where: {
+                        address: '',
+                        city: '',
+                        mapLocation: 'locationnnnn',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                 }
             ],
@@ -192,24 +245,44 @@ module.exports = {
                 {
                     name: 'Bonaona',
                     description: 'Lorem ipsum',
-                    where: 'Can Pastilla',
-                    mapLocation: 'locationnnnn',
+                    where: {
+                        address: '',
+                        city: 'Can Pastilla',
+                        mapLocation: 'locationnnnn',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     features: ['SUP', 'surf', 'kayak']
                 },
                 {
+                    name: 'El Niño',
+                    description: 'Lorem ipsum',
+                    where: {
+                        address: '',
+                        city: 'Can Pastilla',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    features: ['SUP']
+                },
+                {
                     name: 'Tuent Experience',
                     description: 'Lorem ipsum',
-                    where: 'Cala Tuent',
-                    mapLocation: 'locationnnnn',
+                    where: {
+                        address: '',
+                        city: 'Cala Tuent',
+                        mapLocation: 'locationnnnn',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     features: ['SUP', 'kayak', 'diving']
                 },
                 {
                     name: 'Piraguas Mix',
                     description: 'Lorem ipsum',
-                    where: 'Colònia de Sant Jordi',
-                    mapLocation: 'locationnnnn',
+                    where: {
+                        address: '',
+                        city: 'Colònia de Sant Jordi',
+                        mapLocation: 'locationnnnn',
+                    },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     features: ['kayak']
                 }
