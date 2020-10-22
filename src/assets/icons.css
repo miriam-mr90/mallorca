@@ -25,6 +25,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .icon-cheers:before {
+    content: "\e907";
+  }
   .icon-pin:before {
     content: "\e906";
   }

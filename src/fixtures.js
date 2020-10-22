@@ -80,7 +80,24 @@ module.exports = {
             ],
         },
         {
-            name: 'Food & Drinks',
+            name: 'Bars',
+            label: 'bar',
+            icon: 'cheers',
+            items: [
+                {
+                    name: 'Vermutería San Jaime',
+                    description: 'Lorem ipsum',
+                    where: {
+                        address: 'Passeig de Mallorca, 18, 07012 Palma, Illes Balears',
+                        city: 'Palma',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'patron_lunares',
+                },
+            ],
+        },
+        {
+            name: 'Restaurants',
             label: 'food',
             icon: 'food',
             filters: {
