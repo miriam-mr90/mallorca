@@ -16,18 +16,14 @@ const StyledMenuItem = styled.div`
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    flex: 1;
     font-size: 12px;
     margin: 8px;
+    max-width: 220px;
     padding: 16px 12px;
     text-align: center;
     text-transform: uppercase;
     transition: all .2s;
-    width: 33%;
-
-    @media ${props => props.theme.device.tablet} {
-        max-width: 220px;
-        width: auto;
-    }
 
     &:hover {
         cursor: pointer;
