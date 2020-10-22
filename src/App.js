@@ -43,6 +43,7 @@ export default class App extends Component {
     }
 
     render() {
+        console.log(this.props)
         return (
             <Layout
                 {...this.props}
