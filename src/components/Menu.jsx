@@ -5,7 +5,7 @@ const StyledMenu = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 36px;
+    margin-bottom: 20px;
 `;
 
 const StyledCard = styled.div`
@@ -15,26 +15,30 @@ const StyledCard = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    font-size: 13px;
-    margin-left: 12px;
-    margin-right: 12px;
-    padding: 24px 20px;
+    flex-grow: 1;
+    font-size: 12px;
+    margin: 8px;
+    padding: 16px 12px;
     text-align: center;
     text-transform: uppercase;
-    transition: transform .2s;
+    transition: all .2s;
+    width: 33%;
+
+    @media ${props => props.theme.device.tablet} {
+        max-width: 220px;
+        width: auto;
+    }
 
     &:hover {
         cursor: pointer;
     }
 
     .icon {
-        font-size: 42px;
-        margin-bottom: 16px;
+        font-size: 28px;
+        margin-bottom: 12px;
     }
 
     ${props => props.active && css`
-        border-bottom: ${props => `2px solid ${props.theme.color.mainDark}`};
         color: ${props => props.theme.color.mainDark};
         font-weight: 600;
         transform: rotateZ(3deg);

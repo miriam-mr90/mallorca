@@ -4,7 +4,12 @@ import styled from "styled-components";
 
 const StyledCardsWrapper = styled.div`
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+
+    @media ${props => props.theme.device.tablet} {
+        flex-direction: row;
+    }
 `;
 
 const StyledCard = styled.div`
@@ -13,9 +18,9 @@ const StyledCard = styled.div`
     box-shadow: -1px 1px 2px rgba(18,42,68,0.1);
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     flex: 0 0 calc(25% - 24px);
-    margin: 12px;
+    flex-direction: column;
+    margin: 8px 12px;
 
     .card {
         &__wrapper {
@@ -28,6 +33,7 @@ const StyledCard = styled.div`
             color: ${props => props.theme.color.main};
         }
     }
+
 `;
 
 const CardItem = ({ item }) => (
