@@ -9,39 +9,42 @@ const StyledMenu = styled.div`
 `;
 
 const StyledMenuItem = styled.div`
-    background: ${props => props.theme.color.neutral000};
-    border-radius: 4px;
-    box-shadow: -1px 1px 2px rgba(18,42,68,0.1);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    font-size: 12px;
-    margin: 8px;
-    padding: 16px 12px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all .2s;
-    width: 33%;
+    ${({ theme, active }) => css`
+        background: ${theme.color.neutral000};
+        border-radius: 4px;
+        box-shadow: -1px 1px 2px rgba(18,42,68,0.1);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        margin: 8px;
+        padding: 16px 12px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all .2s;
+        width: calc(50% - 16px);
 
-    @media ${props => props.theme.device.tablet} {
-        max-width: 220px;
-        width: auto;
-    }
+        @media ${theme.device.tablet} {
+            flex: 1;
+            width: auto;
+            max-width: 220px;
+        }
 
-    &:hover {
-        cursor: pointer;
-    }
+        &:hover {
+            cursor: pointer;
+        }
 
-    .icon {
-        font-size: 28px;
-        margin-bottom: 12px;
-    }
+        .icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
 
-    ${props => props.active && css`
-        color: ${props => props.theme.color.mainDark};
-        font-weight: 600;
-        transform: rotateZ(3deg);
+        ${active && css`
+            color: ${theme.color.mainDark};
+            font-weight: 600;
+            transform: rotateZ(3deg);
+        `}
+
     `}
 `;
 
