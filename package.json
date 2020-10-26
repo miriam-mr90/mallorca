@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "react-scripts build",
-    "dist": "echo miriam-mr90-mallorca.surge.sh > build/CNAME; surge",
+    "dist": "echo mallorca-life.surge.sh > build/CNAME; surge",
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "test": "react-scripts test",
