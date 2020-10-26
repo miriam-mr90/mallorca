@@ -1,7 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+# MALLORCA·life (work in progress)
 
 ![alt tag](public/screenshot_example.png)
+
+This project is temporary deployed [here](http://mallorca-life.surge.sh/)
 
 ## Available Scripts
 
