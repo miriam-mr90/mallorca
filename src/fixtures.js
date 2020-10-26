@@ -1,5 +1,12 @@
 module.exports = {
     title: 'Mallorca',
+    errors: {
+        'no-results': {
+            title: 'Whoops!',
+            message: "Sorry, we couldn't find any result matching",
+            icon: 'not-found',
+        }
+    },
     categories: [
         {
             name: 'Beaches & Coves',
@@ -10,18 +17,6 @@ module.exports = {
                 features: ['family', 'accessible', 'snorkel'],
             },
             items: [
-                {
-                    name: 'Es Trenc',
-                    description: 'Lorem ipsum',
-                    where: {
-                        address: '',
-                        city: '',
-                        mapLocation: 'locationnnnn',
-                    },
-                    photo: 'es_trenc',
-                    type: 'beach',
-                    isFavorite: true,
-                },
                 {
                     name: 'Cala Tuent',
                     description: 'Lorem ipsum',
@@ -34,6 +29,18 @@ module.exports = {
                     type: 'cove',
                     features: ['snorkel'],
                     isFavorite: true,
+                },
+                {
+                    name: 'Es Trenc',
+                    description: 'Lorem ipsum',
+                    where: {
+                        address: '',
+                        city: '',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'es_trenc',
+                    type: 'beach',
+                    isFavorite: false,
                 },
                 {
                     name: 'Cala Figuera',

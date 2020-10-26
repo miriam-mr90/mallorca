@@ -9,13 +9,16 @@ export default class App extends Component {
 
         this.state = {
             selectedMenuItem: null,
+            selectedMenuItemIcon: null,
             categorySelected: props.categories,
             displayedItems: props.categories.items,
+            isMenuOpen: false,
         };
 
         this.updateState= this.updateState.bind(this);
         this.showMainContent = this.showMainContent.bind(this);
         this.filterCategories = this.filterCategories.bind(this);
+        this.toggleMenu= this.toggleMenu.bind(this);
     }
 
     updateState(state, value) {
@@ -24,12 +27,23 @@ export default class App extends Component {
         });
     }
 
-    showMainContent(category) {
+    toggleMenu() {
+        this.setState(prevState => ({
+            isMenuOpen: !prevState.isMenuOpen
+          }));
+    }
+
+    showMainContent(category, categoryIcon) {
         const categoryObj = this.props.categories.find(obj => obj['label'] === category);
 
-        this.updateState('selectedMenuItem', category);
-        this.updateState('categorySelected', categoryObj);
-        this.updateState('displayedItems', categoryObj.items);
+        this.setState({
+            'selectedMenuItem': categoryObj.name,
+            'selectedMenuItemIcon': categoryIcon,
+            'categorySelected': categoryObj,
+            'displayedItems': categoryObj.items,
+        });
+
+        this.toggleMenu();
     }
 
     filterCategories(filterBy, value) {
@@ -43,13 +57,13 @@ export default class App extends Component {
     }
 
     render() {
-        console.log(this.props)
         return (
             <Layout
                 {...this.props}
                 {...this.state}
                 showMainContent={this.showMainContent}
                 filterCategories={this.filterCategories}
+                toggleMenu={this.toggleMenu}
             />
         );
     }

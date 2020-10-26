@@ -2,11 +2,13 @@ import React from 'react';
 // import ReactImageAppear from 'react-image-appear';
 import styled, { css } from 'styled-components';
 import { isEmptyString } from '../helpers';
+import ErrorMessage from '../Views/ErrorMessage';
 
 const StyledCardsWrapper = styled.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex: 1;
 
     ${({ theme }) => css`
         @media ${theme.device.tablet} {
@@ -64,11 +66,14 @@ const CardItem = ({ item }) => (
                 </Address>
             )}
             <div>Type: {item.type}</div>
-            { item.features && <div> Features:
-                {item.features.map((item, index) => (
-                    <span key={index}>{item}</span>
-                ))}
-            </div>}
+            { item.features && (
+                <div> Features:
+                    {item.features.map((item, index) => (
+                        <span key={index}>{item}</span>
+                    ))}
+                </div>
+            )}
+            { item.isFavorite && <i className="icon icon-star" />}
         </div>
     </StyledCard>
 );
@@ -77,7 +82,7 @@ const Card = ({ displayedItems }) => (
     <StyledCardsWrapper>
         {displayedItems.length
             ? displayedItems.map((item, index) => (<CardItem  key={index} item={item} />))
-            : <p>Not found</p>
+            : <ErrorMessage type='no-results' />
         }
     </StyledCardsWrapper>
 );

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css }  from "styled-components";
+import { Turn as Hamburger } from 'hamburger-react'
 
 const StyledMenu = styled.div`
     display: flex;
@@ -16,7 +17,7 @@ const StyledMenuItem = styled.div`
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        font-size: 12px;
+        font-size: 13px;
         margin: 8px;
         padding: 16px 12px;
         text-align: center;
@@ -35,7 +36,7 @@ const StyledMenuItem = styled.div`
         }
 
         .icon {
-            font-size: 28px;
+            font-size: 34px;
             margin-bottom: 12px;
         }
 
@@ -44,16 +45,30 @@ const StyledMenuItem = styled.div`
             font-weight: 600;
             transform: rotateZ(3deg);
         `}
-
     `}
 `;
 
-const Menu = ({ categories, selectedMenuItem, showMainContent }) => (
+const StyledMenuButton = styled(Hamburger)`
+    display: none;
+`;
+
+const MenuButton = ({ isMenuOpen, toggleMenu }) => (
+    <StyledMenuButton rounded
+        toggle={() => toggleMenu()}
+        toggled={isMenuOpen}
+    />
+);
+
+const MenuContent = ({
+    categories,
+    selectedMenuItem,
+    showMainContent,
+}) => (
     <StyledMenu>
         {categories.map((item, index) => (
             <StyledMenuItem key={index}
                 item={item}
-                onClick={() => showMainContent(item.label)}
+                onClick={() => showMainContent(item.label, item.icon)}
                 active={selectedMenuItem === item.label}>
                 <i className={`icon icon-${item.icon}`} />
                 {item.name}
@@ -62,4 +77,8 @@ const Menu = ({ categories, selectedMenuItem, showMainContent }) => (
     </StyledMenu>
 );
 
-export default Menu;
+export {
+    MenuContent,
+    MenuButton,
+};
+

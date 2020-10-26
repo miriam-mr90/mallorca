@@ -1,22 +1,25 @@
 import React from 'react';
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const StyledSelect = styled.div`
-    align-items: center;
-    color: ${props => props.theme.color.neutral000};
-    display: flex;
-    margin: 1.2rem 1.2rem 1.2rem 0;
+    ${({ theme }) => css`
+        align-items: center;
+        color: ${theme.color.neutral000};
+        display: flex;
+        margin: 1.2rem 1.2rem 1.2rem 0;
 
-    span {
-        text-transform: capitalize;
-    }
+        span {
+            text-transform: capitalize;
+        }
 
-    select {
-        margin-left: 1rem;
-        padding: .4rem .6rem;
-        border-radius: .2rem;
-        border: .1rem solid #ced4da;
-    }
+        select {
+            background: ${theme.color.neutral000};
+            margin-left: 1rem;
+            padding: .4rem .6rem;
+            border-radius: .2rem;
+            border: .1rem solid #ced4da;
+        }
+    `}
 `;
 
 const Select = ({ filters, onChangeMethod, objectKey }) => (
