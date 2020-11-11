@@ -3,7 +3,7 @@ import styled, { createGlobalStyle, css } from 'styled-components'
 import BackgroundImage from "../assets/images/app_bg.jpg";
 
 import Header from './Header.jsx';
-import Results from '../Views/Results.jsx';
+import Results from '../views/Results.jsx';
 import { MenuContent } from './Menu/Menu.jsx';
 
 const StyledWrapper = styled.div`
@@ -58,13 +58,6 @@ const Layout = ({
             isMenuOpen={isMenuOpen}
             toggleMenu={toggleMenu}
         />
-        {isMenuOpen && (
-            <MenuContent categories={categories}
-                selectedMenuItem={selectedMenuItem}
-                showMainContent={showMainContent}
-            />
-        )}
-
         { (!isMenuOpen && selectedMenuItem !== null) && (
             <Results
                 categorySelected={categorySelected}

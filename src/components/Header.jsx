@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import { MenuButton } from './Menu/Menu.jsx';
+import { MenuButton, MenuContent } from './Menu/Menu.jsx';
 
 const StyledHeader = styled.header`
     align-items: center;
@@ -20,11 +20,23 @@ const Header = ({
     title,
     isMenuOpen,
     toggleMenu,
+    categories,
+    selectedMenuItem,
+    showMainContent,
 }) => (
-    <StyledHeader>
-        <h1>{title}</h1>
-        <MenuButton isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-    </StyledHeader>
+    <>
+        <StyledHeader>
+            <h1>{title}</h1>
+            <MenuButton isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+
+        </StyledHeader>
+        {isMenuOpen && (
+            <MenuContent categories={categories}
+                selectedMenuItem={selectedMenuItem}
+                showMainContent={showMainContent}
+            />
+        )}
+    </>
 );
 
 export default Header;
