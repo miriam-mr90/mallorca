@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'wouter';
 import styled, { css }  from "styled-components";
 import { Turn as Hamburger } from 'hamburger-react'
 
@@ -9,7 +10,7 @@ const StyledMenu = styled.div`
     margin-bottom: 20px;
 `;
 
-const StyledMenuItem = styled.div`
+const StyledMenuItem = styled(Link)`
     ${({ theme, active }) => css`
         background: ${theme.color.neutral000};
         border-radius: 4px;
@@ -68,8 +69,10 @@ const MenuContent = ({
         {categories.map((item, index) => (
             <StyledMenuItem key={index}
                 item={item}
-                onClick={() => showMainContent(item.label, item.icon)}
-                active={selectedMenuItem === item.label}>
+                // onClick={() => showMainContent(item.label, item.icon)}
+                active={selectedMenuItem === item.label}
+                to={`/category/${item.label}`}
+            >
                 <i className={`icon icon-${item.icon}`} />
                 {item.name}
             </StyledMenuItem>

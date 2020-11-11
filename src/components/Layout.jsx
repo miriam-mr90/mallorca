@@ -1,10 +1,15 @@
 import React from 'react';
+import { Route, Switch } from "wouter";
 import styled, { createGlobalStyle, css } from 'styled-components'
 import BackgroundImage from "../assets/images/app_bg.jpg";
 
 import Header from './Header.jsx';
-import Results from '../Views/Results.jsx';
+import Results from '../views/Results.jsx';
 import { MenuContent } from './Menu/Menu.jsx';
+
+import HomePage from '../views/Home.jsx';
+import CategoryPage from '../views/Category.jsx';
+import ErrorPage from '../views/ErrorMessage.jsx';
 
 const StyledWrapper = styled.div`
     display: flex;
@@ -64,7 +69,7 @@ const Layout = ({
                 showMainContent={showMainContent}
             />
         )}
-
+        {/* TODO: create a context provider to have the props needed in the routes */}
         { (!isMenuOpen && selectedMenuItem !== null) && (
             <Results
                 categorySelected={categorySelected}
@@ -73,6 +78,12 @@ const Layout = ({
                 filterCategories={filterCategories}
                 displayedItems={displayedItems}/>
         )}
+
+        <Switch>
+            <Route component={HomePage} path="/" />
+            <Route component={CategoryPage} path="/category/:id" />
+            <Route component={ErrorPage} path="/error" />
+        </Switch>
     </StyledWrapper>
 );
 
