@@ -2,7 +2,7 @@ import React from 'react';
 // import ReactImageAppear from 'react-image-appear';
 import styled, { css } from 'styled-components';
 import { isEmptyString } from '../helpers';
-import ErrorMessage from '../Views/ErrorMessage';
+import ErrorMessage from '../views/ErrorMessage';
 
 const StyledCardsWrapper = styled.div`
     display: flex;
