@@ -2,7 +2,7 @@
 
 ![alt tag](public/screenshot_example_menu.png)  ![alt tag](public/screenshot_example_category.png)
 
-This project is temporary deployed [here](http://mallorca-life.surge.sh/)
+This project is temporary deployed [here](http://mallorca-life.surge.sh/) and designed for mobile resolutions
 
 ## Available Scripts
 
