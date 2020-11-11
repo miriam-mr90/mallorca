@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Title from '../components/ui/Title.jsx';
-import Cards from '../components/Cards.jsx'
+import Cards from '../components/CardResult.jsx'
 import Filters from '../components/Filters.jsx';
 
 const Results = ({
