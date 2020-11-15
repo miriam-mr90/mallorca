@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './assets/icons.css';
+import GlobalAppStyles from './GlobalAppStyles.jsx';
 import Layout from './components/Layout.jsx';
 
 export default class App extends Component {
@@ -18,7 +19,8 @@ export default class App extends Component {
         this.updateState= this.updateState.bind(this);
         this.showMainContent = this.showMainContent.bind(this);
         this.filterCategories = this.filterCategories.bind(this);
-        this.toggleMenu= this.toggleMenu.bind(this);
+        this.toggleMenu = this.toggleMenu.bind(this);
+        this.goHome = this.goHome.bind(this);
     }
 
     updateState(state, value) {
@@ -30,7 +32,17 @@ export default class App extends Component {
     toggleMenu() {
         this.setState(prevState => ({
             isMenuOpen: !prevState.isMenuOpen
-          }));
+        }));
+    }
+
+    goHome() {
+        if(this.state.isMenuOpen === true) {
+            this.toggleMenu();
+        };
+
+        this.setState({
+            'selectedMenuItem': null,
+        });
     }
 
     showMainContent(category, categoryIcon) {
@@ -58,13 +70,17 @@ export default class App extends Component {
 
     render() {
         return (
-            <Layout
-                {...this.props}
-                {...this.state}
-                showMainContent={this.showMainContent}
-                filterCategories={this.filterCategories}
-                toggleMenu={this.toggleMenu}
-            />
+            <>
+                <GlobalAppStyles/>
+                <Layout
+                    {...this.props}
+                    {...this.state}
+                    showMainContent={this.showMainContent}
+                    filterCategories={this.filterCategories}
+                    toggleMenu={this.toggleMenu}
+                    goHome={this.goHome}
+                />
+            </>
         );
     }
 }

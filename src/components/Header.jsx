@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
         color: ${theme.color.neutral000};
         display: flex;
         justify-content: space-between;
-        padding: 1.2rem;
+        padding: 1.2rem 0;
         text-shadow: 2px 2px 2px rgba(155,155,155,0.49);
 
         h1 {
@@ -25,10 +25,11 @@ const Header = ({
     categories,
     selectedMenuItem,
     showMainContent,
+    goHome,
 }) => (
     <>
         <StyledHeader>
-            <h1>{title}</h1>
+            <h1 onClick={() => goHome()} >{title}</h1>
             <MenuButton isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
 
         </StyledHeader>

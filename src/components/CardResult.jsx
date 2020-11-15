@@ -20,7 +20,7 @@ const StyledCardsWrapper = styled.div`
 const StyledCard = styled.div`
     ${({ theme }) => css`
         background: ${theme.color.neutral000};
-        border-radius: 4px;
+        border-radius: .4rem;
         box-shadow: -1px 1px 2px rgba(18,42,68,0.1);
         box-sizing: border-box;
         display: flex;
@@ -49,7 +49,7 @@ const Image = styled.div`
         width: calc(100% + 40px); /* full width + card padding */
         background: #eaeef4;
         margin-top: -24px;
-        border-radius: 4px 4px 0 0;
+        border-radius: .4rem .4rem 0 0;
         height: 120px;
         margin-bottom: 24px;
 

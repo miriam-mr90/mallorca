@@ -16,7 +16,7 @@ const StyledSelect = styled.div`
             background: ${theme.color.neutral000};
             margin-left: 1rem;
             padding: .4rem .6rem;
-            border-radius: .2rem;
+            border-radius: .4rem;
             border: .1rem solid #ced4da;
         }
     `}
