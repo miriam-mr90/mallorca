@@ -1,8 +1,9 @@
 # MALLORCA·life (work in progress)
 
-![alt tag](public/screenshot_example.png)
+This project is temporary deployed [here](http://mallorca-life.surge.sh/) and designed for mobile resolutions
 
-This project is temporary deployed [here](http://mallorca-life.surge.sh/)
+![alt tag](public/screenshot_example_menu.png)  ![alt tag](public/screenshot_example_category.png)
+
 
 ## Available Scripts
 

@@ -3,8 +3,7 @@ import styled, { createGlobalStyle, css } from 'styled-components'
 import BackgroundImage from "../assets/images/app_bg.jpg";
 
 import Header from './Header.jsx';
-import Results from '../Views/Results.jsx';
-import { MenuContent } from './Menu/Menu.jsx';
+import Results from '../views/Results.jsx';
 
 const StyledWrapper = styled.div`
     display: flex;
@@ -23,14 +22,18 @@ const GlobalStyle = createGlobalStyle`
                 url('../assets/fonts/Raleway-VariableFont_wght.ttf') format('truetype'), /* Safari, Android, iOS */
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Raleway', sans-serif;
             font-size: 14px;
             background-image: linear-gradient(360deg, rgb(160, 222, 219),rgb(3, 165, 209));
-            /* background-image: url(${BackgroundImage});
+            background-image: url(${BackgroundImage});
             background-position: left top;
             background-repeat: no-repeat;
-            background-size: cover; */
+            background-size: cover;
             color: ${theme.color.text};
             margin: 0;
         }
@@ -58,13 +61,6 @@ const Layout = ({
             isMenuOpen={isMenuOpen}
             toggleMenu={toggleMenu}
         />
-        {isMenuOpen && (
-            <MenuContent categories={categories}
-                selectedMenuItem={selectedMenuItem}
-                showMainContent={showMainContent}
-            />
-        )}
-
         { (!isMenuOpen && selectedMenuItem !== null) && (
             <Results
                 categorySelected={categorySelected}

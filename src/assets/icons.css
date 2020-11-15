@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'IcoMallorca';
-	src:  url(./fonts/icons/icomallorca.eot);
+	src:  url('./fonts/icons/icomallorca.eot');
 	src:  url('./fonts/icons/icomallorca.eot') format('embedded-opentype'),
 	  url('./fonts/icons/icomallorca.ttf') format('truetype'),
 	  url('./fonts/icons/icomallorca.woff') format('woff'),
@@ -30,6 +30,15 @@
   }
   .icon-cheers:before {
     content: "\e907";
+  }
+  .icon-heart:before {
+    content: "\e90a";
+  }
+  .icon-empty-heart:before {
+    content: "\e90b";
+  }
+  .icon-no-photo:before {
+    content: "\e909";
   }
   .icon-pin:before {
     content: "\e906";
