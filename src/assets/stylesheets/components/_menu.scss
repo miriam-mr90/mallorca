@@ -1,0 +1,51 @@
+$this: '.menu';
+
+#{$this} {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    @include respond-to('mobileL') {
+        align-self: center;
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+    &__item {
+        align-items: center;
+        background: $c-neutral000;
+        border-radius: .4rem;
+        box-shadow: -1px 1px 2px rgba(18,42,68,0.1);
+        box-sizing: border-box;
+        display: flex;
+        font-size: 13px;
+        margin: .4rem 0;
+        padding: 1.2rem;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all .2s;
+
+        @include respond-to('mobileL') {
+            width: 220px;
+            margin: 6px;
+            text-align: left;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 12px;
+        }
+
+        &[data-active="true"] {
+            color: $c-mainDark;
+            font-weight: 600;
+            transform: rotateZ(1.6deg);
+        }
+    }
+}
