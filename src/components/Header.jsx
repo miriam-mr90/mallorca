@@ -13,7 +13,12 @@ const StyledHeader = styled.header`
 
         h1 {
             font-size: 36px;
+            font-weight: bold;
             margin: 0;
+
+            &:hover {
+                cursor: pointer;
+            }
 
             @media ${theme.device.mobileL} {
                 justify-content: center;

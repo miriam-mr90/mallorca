@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './assets/icons.css';
-import GlobalAppStyles from './GlobalAppStyles.jsx';
+import './assets/stylesheets/main.scss';
 import Layout from './components/Layout.jsx';
 
 export default class App extends Component {
@@ -70,17 +70,14 @@ export default class App extends Component {
 
     render() {
         return (
-            <>
-                <GlobalAppStyles/>
-                <Layout
-                    {...this.props}
-                    {...this.state}
-                    showMainContent={this.showMainContent}
-                    filterCategories={this.filterCategories}
-                    toggleMenu={this.toggleMenu}
-                    goHome={this.goHome}
-                />
-            </>
+            <Layout
+                {...this.props}
+                {...this.state}
+                showMainContent={this.showMainContent}
+                filterCategories={this.filterCategories}
+                toggleMenu={this.toggleMenu}
+                goHome={this.goHome}
+            />
         );
     }
 }
