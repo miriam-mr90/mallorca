@@ -14,6 +14,13 @@ const StyledHeader = styled.header`
         h1 {
             font-size: 36px;
             margin: 0;
+
+            @media ${theme.device.mobileL} {
+                justify-content: center;
+                flex: 1;
+                transform: translateX(24px); // hamburger-menu width/2
+                text-align: center;
+            }
         }
     `}
 `;

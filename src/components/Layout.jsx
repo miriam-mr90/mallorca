@@ -47,6 +47,31 @@ const StyledBgVideo = styled.video`
     z-index: -1;
 `;
 
+const MainContent = ({
+    categorySelected,
+    selectedMenuItem,
+    selectedMenuItemIcon,
+    filterCategories,
+    displayedItems,
+    welcomeText
+}) => {
+    const render = selectedMenuItem !== null ? (
+            <Results
+                categorySelected={categorySelected}
+                selectedMenuItem={selectedMenuItem}
+                selectedMenuItemIcon={selectedMenuItemIcon}
+                filterCategories={filterCategories}
+                displayedItems={displayedItems}/>
+        ) : (
+            <StyledWelcomeText>
+                {welcomeText}
+                <button>Button copy</button>
+            </StyledWelcomeText>
+        );
+
+    return render;
+}
+
 const Layout = ({
     categories,
     categorySelected,
@@ -74,18 +99,15 @@ const Layout = ({
             toggleMenu={toggleMenu}
             goHome={goHome}
         />
-        { (!isMenuOpen && selectedMenuItem !== null) ? (
-            <Results
+        { !isMenuOpen && (
+            <MainContent
                 categorySelected={categorySelected}
                 selectedMenuItem={selectedMenuItem}
                 selectedMenuItemIcon={selectedMenuItemIcon}
                 filterCategories={filterCategories}
-                displayedItems={displayedItems}/>
-        ) : (
-            <StyledWelcomeText>
-                {welcomeText}
-                <button>Button copy</button>
-            </StyledWelcomeText>
+                displayedItems={displayedItems}
+                welcomeText={welcomeText}
+            />
         )}
     </StyledWrapper>
 );

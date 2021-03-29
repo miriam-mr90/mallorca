@@ -3,11 +3,20 @@ import styled, { css }  from "styled-components";
 import { Turn as Hamburger } from 'hamburger-react'
 
 const StyledMenu = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 2rem;
+    ${({ theme, active }) => css`
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        @media ${theme.device.mobileL} {
+            align-self: center;
+            flex-direction: row;
+            max-width: 800px;
+
+        }
+    `}
 `;
 
 const StyledMenuItem = styled.div`
@@ -18,19 +27,17 @@ const StyledMenuItem = styled.div`
         box-shadow: -1px 1px 2px rgba(18,42,68,0.1);
         box-sizing: border-box;
         display: flex;
-        /* flex-direction: column; */
         font-size: 13px;
         margin: .4rem 0;
         padding: 1.2rem;
         text-align: center;
         text-transform: uppercase;
         transition: all .2s;
-        /* width: calc(50% - 16px); */
 
-        @media ${theme.device.tablet} {
-            flex: 1;
-            width: auto;
-            max-width: 220px;
+        @media ${theme.device.mobileL} {
+            width: 220px;
+            margin: 6px;
+            text-align: left;
         }
 
         &:hover {
