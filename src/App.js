@@ -49,7 +49,7 @@ export default class App extends Component {
         const categoryObj = this.props.categories.find(obj => obj['label'] === category);
 
         this.setState({
-            'selectedMenuItem': categoryObj.name,
+            'selectedMenuItem': categoryObj.label,
             'selectedMenuItemIcon': categoryIcon,
             'categorySelected': categoryObj,
             'displayedItems': categoryObj.items,
