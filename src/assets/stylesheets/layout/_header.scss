@@ -12,6 +12,7 @@ $this: '.header';
         font-size: 36px;
         font-weight: bold;
         margin: 0;
+        max-width: max-content;
 
         &:hover {
             cursor: pointer;
