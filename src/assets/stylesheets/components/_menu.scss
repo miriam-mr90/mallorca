@@ -17,10 +17,11 @@ $this: '.menu';
         align-items: center;
         background: $c-neutral000;
         border-radius: .4rem;
-        box-shadow: -1px 1px 2px rgba(18,42,68,0.1);
+        box-shadow: -1px 1px 2px rgba(18, 42, 68, .1);
         box-sizing: border-box;
         display: flex;
         font-size: 13px;
+        font-weight: 700;
         margin: .4rem 0;
         padding: 1.2rem;
         text-align: center;
@@ -42,10 +43,8 @@ $this: '.menu';
             margin-right: 12px;
         }
 
-        &[data-active="true"] {
+        &[data-active='true'] {
             color: $c-mainDark;
-            font-weight: 600;
-            transform: rotateZ(1.6deg);
         }
     }
 }
