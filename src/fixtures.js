@@ -20,7 +20,7 @@ module.exports = {
             items: [
                 {
                     name: 'Cala Tuent',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: '',
@@ -33,7 +33,7 @@ module.exports = {
                 },
                 {
                     name: 'Es Trenc',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: '',
@@ -45,7 +45,7 @@ module.exports = {
                 },
                 {
                     name: 'Cala Figuera',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: '',
@@ -58,7 +58,7 @@ module.exports = {
                 },
                 {
                     name: 'Cala Varques',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: '',
@@ -77,7 +77,7 @@ module.exports = {
             items: [
                 {
                     name: 'Sant Elm',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: 'Andratx',
@@ -94,7 +94,7 @@ module.exports = {
             items: [
                 {
                     name: 'Vermutería San Jaime',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: 'Passeig de Mallorca, 18, 07012 Palma, Illes Balears',
                         city: 'Palma',
@@ -114,7 +114,7 @@ module.exports = {
             items: [
                 {
                     name: 'Patrón Lunares',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: 'Palma',
@@ -126,7 +126,7 @@ module.exports = {
                 },
                 {
                     name: 'Buscando el norte',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: 'Carrer de Sant Miquel, 77, 07002 Palma, Illes Balears',
                         city: 'Palma',
@@ -138,7 +138,7 @@ module.exports = {
                 },
                 {
                     name: 'Es Vergeret',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: 'Cala Tuent',
@@ -150,7 +150,7 @@ module.exports = {
                 },
                 {
                     name: 'Bar Esperanza',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: 'Ses Covetes',
@@ -162,7 +162,7 @@ module.exports = {
                 },
                 {
                     name: 'Aquanauta',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: 'Palma',
@@ -173,7 +173,7 @@ module.exports = {
                 },
                 {
                     name: 'Primo taquería',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: 'C. de la Fàbrica, 29, 07013 Palma, Illes Balears',
                         city: 'Palma',
@@ -184,7 +184,7 @@ module.exports = {
                 },
                 {
                     name: 'Spot',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: 'Plaça de la Verge del Miracle, 3, 07013 Palma, Illes Balears',
                         city: 'Palma',
@@ -193,6 +193,61 @@ module.exports = {
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     type: ['aaa'],
                 },
+                {
+                    name: 'Es Vaixell',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    where: {
+                        address: 'Plaça de la Verge del Miracle, 3, 07013 Palma, Illes Balears',
+                        city: 'Portixol',
+                        mapLocation: '',
+                    },
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    type: ['Llonguets'],
+                },
+                {
+                    name: 'La vieja de  Jonay',
+                    description: 'La vieja de  Jonay (canario) en casco antiguo',
+                    where: {
+                        address: 'Plaça de la Verge del Miracle, 3, 07013 Palma, Illes Balears',
+                        city: 'Palma',
+                        mapLocation: '',
+                    },
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    type: ['canario'],
+                },
+                {
+                    name: '5illes EAT&DRINK',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    where: {
+                        address: 'Plaça de la Verge del Miracle, 3, 07013 Palma, Illes Balears',
+                        city: 'Colonia de Sant Jordi',
+                        mapLocation: '',
+                    },
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    type: ['aaa'],
+                },
+                {
+                    name: 'Wasabi',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    where: {
+                        address: 'Plaça de la Verge del Miracle, 3, 07013 Palma, Illes Balears',
+                        city: 'Palma',
+                        mapLocation: '',
+                    },
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    type: ['japonés'],
+                },
+                {
+                    name: 'Naan',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    where: {
+                        address: 'Plaça de la Verge del Miracle, 3, 07013 Palma, Illes Balears',
+                        city: 'Palma',
+                        mapLocation: '',
+                    },
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    type: ['aaa'],
+                }
             ],
         },
         {
@@ -202,7 +257,7 @@ module.exports = {
             items: [
                 {
                     name: 'Cap de Formentor',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: '',
@@ -211,8 +266,8 @@ module.exports = {
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                 },
                 {
-                    name: 'Catedral de Palma',
-                    description: 'Lorem ipsum',
+                    name: 'Catedral de “La Seu“',
+                    description: 'Catedral de “La Seu“ (Catedral de Palma) y el Parc de la Mar',
                     where: {
                         address: '',
                         city: 'Palma',
@@ -221,8 +276,8 @@ module.exports = {
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                 },
                 {
-                    name: 'Puerto de Soller',
-                    description: 'Lorem ipsum',
+                    name: 'Real Palacio de la Almudaina',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: 'Soller',
@@ -230,6 +285,36 @@ module.exports = {
                     },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                 },
+                {
+                    name: 'Puerto de Soller',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    where: {
+                        address: '',
+                        city: 'Soller',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                },
+                {
+                    name: 'Castillo Bellver',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    where: {
+                        address: '',
+                        city: 'Palma',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                },
+                {
+                    name: 'Museo de Arte Contemporáneo de Es Baluard',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    where: {
+                        address: '',
+                        city: 'Palma',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                }
             ],
         },
         {
@@ -238,21 +323,41 @@ module.exports = {
             icon: 'boat',
             items: [
                 {
-                    name: 'SUP',
-                    description: 'Lorem ipsum',
+                    name: 'Aqua Xtrem',
+                    description: 'Puerto Deportivo Marina Cala D’or (160€/4 horas)',
                     where: {
                         address: '',
-                        city: '',
+                        city: 'Puerto Deportivo Marina Cala D’or',
                         mapLocation: 'locationnnnn',
                     },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                 },
                 {
-                    name: 'theatre',
-                    description: 'Lorem ipsum',
+                    name: 'Alize boats',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
-                        city: '',
+                        city: 'Mallorca',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                },
+                {
+                  name: 'Mistral Nautic',
+                  description: 'Mistral Nautic (IG: @mistralnautic): en Portocolom (190€/4 horas) ',
+                  where: {
+                      address: '',
+                      city: 'Portocolom',
+                      mapLocation: 'locationnnnn',
+                  },
+                  photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+              },
+                {
+                    name: 'Alquiler barcos Palma',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    where: {
+                        address: '',
+                        city: 'Palma de Mallorca',
                         mapLocation: 'locationnnnn',
                     },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
@@ -269,7 +374,7 @@ module.exports = {
             items: [
                 {
                     name: 'Bonaona',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: 'Can Pastilla',
@@ -280,7 +385,7 @@ module.exports = {
                 },
                 {
                     name: 'El Niño',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: 'Can Pastilla',
@@ -291,7 +396,7 @@ module.exports = {
                 },
                 {
                     name: 'Tuent Experience',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: 'Cala Tuent',
@@ -302,7 +407,7 @@ module.exports = {
                 },
                 {
                     name: 'Piraguas Mix',
-                    description: 'Lorem ipsum',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     where: {
                         address: '',
                         city: 'Colònia de Sant Jordi',
@@ -310,6 +415,17 @@ module.exports = {
                     },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     features: ['kayak']
+                },
+                {
+                    name: 'La Ola surfschool',
+                    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    where: {
+                        address: '',
+                        city: 'Son Ferriol',
+                        mapLocation: 'locationnnnn',
+                    },
+                    photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
+                    features: ['surf', 'kayak', 'SUP']
                 }
             ],
         }
