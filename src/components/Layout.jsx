@@ -10,19 +10,20 @@ const StyledWrapper = styled.div`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 100vw;
     padding: 0 .8rem;
+    width: 100vw;
 `;
 
 const StyledWelcomeText = styled.div`
     ${({ theme }) => css`
+        align-items: center;
+        align-self: center;
         color: #FFF;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        text-align: center;
         margin-top: 9.5rem;
+        text-align: center;
 
         button {
             appearance: none;
@@ -33,6 +34,10 @@ const StyledWelcomeText = styled.div`
             margin-top: 1.2rem;
             padding: .6rem .8rem;
             width: max-content;
+        }
+
+        @media ${theme.device.mobileL} {
+            max-width: 60%;
         }
     `}
 `;
@@ -45,6 +50,7 @@ const StyledBgVideo = styled.video`
     top: 0;
     width: 100vw;
     z-index: -1;
+    opacity: .6;
 `;
 
 const MainContent = ({
@@ -65,7 +71,7 @@ const MainContent = ({
         ) : (
             <StyledWelcomeText>
                 {welcomeText}
-                <button>Button copy</button>
+                <a href="#" className="link link--animated">Link copy</a>
             </StyledWelcomeText>
         );
 

@@ -27,34 +27,51 @@ $this: '.card';
     }
 
     &__title {
+        color: $c-main;
         font-size: 16px;
         font-weight: 600;
-        text-align: center;
-        color: $c-main;
         margin-bottom: 12px;
+        text-align: center;
+    }
+
+    &__description {
+        margin: 8px ​0px 12px;
+    }
+
+    &__list,
+    &__list-item + &__list-item {
+        margin-top: 8px;
+    }
+
+    &__list-item {
+        text-transform: capitalize;
+
+        span {
+            margin-left: 4px;
+        }
     }
 
     &__address {
         display: flex;
-        margin: 1rem 0;
+        margin-top: 16px;
 
         .icon {
             color: $c-main;
-            margin-right: .4rem;
+            margin-right: 6px;
         }
     }
 
     &__cover {
         align-items: center;
-        display: flex;
-        justify-content: center;
-        margin-left: -20px;
-        width: calc(100% + 40px); /* full width + card padding */
         background: #EAEEF4;
-        margin-top: -24px;
-        border-radius: .4rem .4rem 0 0;
+        border-radius: 6px 6px 0 0;
+        display: flex;
         height: 120px;
+        justify-content: center;
         margin-bottom: 24px;
+        margin-left: -20px;
+        margin-top: -24px;
+        width: calc(100% + 40px); /* full width + card padding */
 
         .icon {
             color: #A8B3C3;
@@ -63,15 +80,9 @@ $this: '.card';
     }
 
     &__favorite {
+        color: $c-amber;
         position: absolute;
-        bottom: 18px;
         right: 16px;
-        color: #EE392C;
-
-        &::before {
-            border: 2px solid;
-            border-radius: 100%;
-            padding: 6px;
-        }
+        top: 16px;
     }
 }

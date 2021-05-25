@@ -6,13 +6,12 @@ import Filters from '../components/Filters.jsx';
 
 const Results = ({
     categorySelected,
-    selectedMenuItem,
     selectedMenuItemIcon,
     filterCategories,
     displayedItems
 }) => (
     <>
-        <Title title={selectedMenuItem} icon={selectedMenuItemIcon} />
+        <Title title={categorySelected.name} icon={selectedMenuItemIcon} />
         {categorySelected.filters && (
             <Filters
                 filters={categorySelected.filters}
