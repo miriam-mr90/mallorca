@@ -1,0 +1,22 @@
+$this: '.error-message';
+
+#{$this} {
+    align-items: center;
+    color: $c-neutral000;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    flex: 1;
+
+    &__image {
+        fill: $c-neutral000;
+        height: auto;
+        width: 62px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+}
