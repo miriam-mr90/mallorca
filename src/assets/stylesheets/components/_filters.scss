@@ -17,4 +17,10 @@ $this: '.filters';
             margin-left: 1.2rem;
         }
     }
+
+    @include respond-to('mobileL') {
+        width: 600px;
+        align-self: center;
+        max-width: 90%;
+    }
 }

@@ -14,7 +14,7 @@ const StyledTitle = styled.h2`
         max-width: max-content;
 
         .icon {
-          font-size: 26px;
+          font-size: 30px;
           margin-right: 1rem;
         }
 
@@ -22,7 +22,7 @@ const StyledTitle = styled.h2`
           font-size: 32px;
 
           .icon {
-              font-size: 36px;
+              font-size: 38px;
           }
         }
     `}

@@ -12,7 +12,10 @@ const Header = ({
 }) => (
     <>
         <header className="header">
-            <h1 className="header__title link--animated" onClick={() => goHome()} >{title}</h1>
+            <h1 className="header__title" onClick={() => goHome()} >
+              {title}
+              <span className="header__sub-title">life</span>
+            </h1>
             <MenuButton isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
 
         </header>
