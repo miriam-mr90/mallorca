@@ -20,13 +20,15 @@
 
 // 4. Layout-related sections
 
-@import 'layout/header',
+@import 'layout/error-message',
+    'layout/header',
     'layout/footer';
 
 // 5. Components
 
 @import 'components/button',
     'components/card',
+    'components/filters',
     'components/link',
     'components/menu';
 

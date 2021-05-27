@@ -4,24 +4,21 @@ $this: '.header';
     align-items: center;
     color: $c-neutral000;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1.2rem 0;
     text-shadow: 2px 2px 2px rgba(155, 155, 155, .49);
 
     &__title {
+        flex: 1;
         font-size: 36px;
         font-weight: bold;
+        justify-content: center;
         margin: 0;
-        max-width: max-content;
+        text-align: center;
+        transform: translateX(24px);
 
         &:hover {
             cursor: pointer;
-        }
-
-        @include respond-to('mobileL') {
-            justify-content: center;
-            flex: 1;
-            transform: translateX(24px); // hamburger-menu width/2
         }
     }
 }

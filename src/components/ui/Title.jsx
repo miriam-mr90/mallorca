@@ -8,18 +8,22 @@ const StyledTitle = styled.h2`
         display: flex;
         justify-content: center;
         text-transform: capitalize;
-        font-weight: normal;
+        font-weight: 500;
         font-size: 26px;
-        margin: 1.2rem auto;
+        margin: 1.2rem auto 2rem;
         max-width: max-content;
+
+        .icon {
+          font-size: 26px;
+          margin-right: 1rem;
+        }
 
         @media ${theme.device.mobileL} {
           font-size: 32px;
-        }
 
-        .icon {
-            font-size: 36px;
-            margin-right: 1rem;
+          .icon {
+              font-size: 36px;
+          }
         }
     `}
 `;

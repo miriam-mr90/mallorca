@@ -1,17 +1,12 @@
 $this: '.menu';
 
 #{$this} {
+    align-items: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2rem;
-
-    @include respond-to('mobileL') {
-        align-self: center;
-        flex-direction: row;
-        max-width: 800px;
-    }
 
     &__item {
         align-items: center;
@@ -21,17 +16,13 @@ $this: '.menu';
         box-sizing: border-box;
         display: flex;
         font-size: 13px;
+        justify-content: center;
         margin: .4rem 0;
         padding: 1.2rem;
         text-align: center;
         text-transform: uppercase;
         transition: all .2s;
-
-        @include respond-to('mobileL') {
-            width: 220px;
-            margin: 6px;
-            text-align: left;
-        }
+        width: 200px;
 
         &:hover {
             cursor: pointer;
@@ -45,5 +36,26 @@ $this: '.menu';
         &[data-active='true'] {
             color: $c-mainDark;
         }
+    }
+
+    @include respond-to('mobileL') {
+        align-self: center;
+        flex-direction: row;
+        max-width: 800px;
+
+        &__item {
+            flex-direction: column;
+            height: 100px;
+            margin: 6px;
+            text-align: left;
+
+            .icon {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    @include respond-to('laptop') {
+        max-width: 1020px;
     }
 }

@@ -3,27 +3,26 @@ import styled, { css } from "styled-components";
 
 const StyledSelect = styled.div`
     ${({ theme }) => css`
-        align-items: center;
         color: ${theme.color.neutral000};
         display: flex;
-        margin: 1.2rem 1.2rem 1.2rem 0;
+        flex-direction: column;
 
         span {
             text-transform: capitalize;
+            margin-bottom: .8rem;
         }
 
         select {
             background: ${theme.color.neutral000};
-            margin-left: 1rem;
             padding: .4rem .6rem;
             border-radius: .4rem;
-            border: .1rem solid #ced4da;
+            border: .1rem solid #CED4DA;
         }
     `}
 `;
 
 const Select = ({ filters, onChangeMethod, objectKey }) => (
-    <StyledSelect>
+    <StyledSelect className="filters__item">
         <span>{objectKey}</span>
         <select onChange={e => onChangeMethod(objectKey, e.target.value)}>
             <option value='all'>All</option>

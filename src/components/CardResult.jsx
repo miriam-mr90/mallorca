@@ -1,13 +1,22 @@
 import React from "react";
+import styled, { css } from 'styled-components'
 // import ReactImageAppear from 'react-image-appear';
 import { isEmptyString } from "../helpers";
 import ErrorMessage from "../views/ErrorMessage";
 
+const CardPhoto = styled.div`
+    ${({ photo }) => css`
+        background-image: url(${photo});
+        background-position: center;
+        background-size: cover;
+    `}
+`;
+
 const CardItem = ({ item }) => (
   <div className="card">
-    <div className="card__cover">
-      <i className="icon icon-no-photo" />
-    </div>
+    <CardPhoto className="card__cover" photo={item.photo}>
+      {!item.photo.includes("https") && <i className="icon icon-no-photo" />}
+    </CardPhoto>
     <h3 className="card__title">{item.name}</h3>
     <p className="card__description">{item.description}</p>
     <ul className="card__list">
