@@ -2,9 +2,6 @@
 
 This project is temporary deployed [here](http://mallorca-life.surge.sh/) and designed for mobile resolutions
 
-![alt tag](public/screenshot_example_menu.png)  ![alt tag](public/screenshot_example_category.png)
-
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -29,7 +26,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Deployment in Surge
 
-Run `npm build` to generate static files
+Run `npm run build` to generate static files
 Go to /build and run `surge`
 
 See [this post](https://daveceddia.com/deploy-create-react-app-surge/) for more information
