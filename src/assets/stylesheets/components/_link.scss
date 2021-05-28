@@ -1,16 +1,15 @@
 $this: '.link';
 
 #{$this} {
-    color: $c-neutral000;
+    color: $c-main;
     font-size: 16px;
-    font-weight: bold;
-    margin-top: 1.2rem;
+    font-weight: 500;
     padding-bottom: .4rem;
     position: relative;
     width: max-content;
 
     &:hover {
-        color: $c-neutral000;
+        color: $c-main;
         cursor: pointer;
         text-decoration: none;
     }
@@ -19,8 +18,8 @@ $this: '.link';
         $element: &;
 
         &::after {
-            background-color: $c-neutral000;
-            bottom: -.4rem;
+            background-color: $c-main;
+            bottom: 0;
             content: '';
             display: block;
             height: 2px;

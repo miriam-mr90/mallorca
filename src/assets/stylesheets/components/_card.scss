@@ -48,7 +48,12 @@ $this: '.card';
         margin: 8px ​0px 12px;
     }
 
-    &__list,
+    &__list {
+        border-top: 1px solid #E7E9EC;
+        padding-top: 16px;
+        margin-top: 16px;
+    }
+
     &__list-item + &__list-item {
         margin-top: 8px;
     }
@@ -67,7 +72,9 @@ $this: '.card';
 
         .icon {
             color: $c-main;
+            font-size: 13px;
             margin-right: 6px;
+            margin-top: 2px;
         }
     }
 
