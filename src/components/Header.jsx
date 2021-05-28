@@ -7,7 +7,7 @@ const Header = ({
     toggleMenu,
     categories,
     selectedMenuItem,
-    showMainContent,
+    showCategoryContent,
     goHome,
 }) => (
     <>
@@ -22,7 +22,7 @@ const Header = ({
         {isMenuOpen && (
             <MenuContent categories={categories}
                 selectedMenuItem={selectedMenuItem}
-                showMainContent={showMainContent}
+                showCategoryContent={showCategoryContent}
             />
         )}
     </>

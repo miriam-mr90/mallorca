@@ -12,13 +12,13 @@ const MenuButton = ({ isMenuOpen, toggleMenu }) => (
 const MenuContent = ({
     categories,
     selectedMenuItem,
-    showMainContent,
+    showCategoryContent,
 }) => (
     <ul className="menu">
         {categories.map((item, index) => (
             <li className="menu__item"
                 key={index}
-                onClick={() => showMainContent(item.label, item.icon)}
+                onClick={() => showCategoryContent(item.label, item.icon)}
                 data-active={selectedMenuItem === item.label}
             >
                 <i className={`icon icon-${item.icon}`} />

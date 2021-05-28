@@ -9,6 +9,7 @@ export default class App extends Component {
         super();
 
         this.state = {
+            currentPage: 'home',
             selectedMenuItem: null,
             selectedMenuItemIcon: null,
             categorySelected: props.categories,
@@ -17,7 +18,7 @@ export default class App extends Component {
         };
 
         this.updateState= this.updateState.bind(this);
-        this.showMainContent = this.showMainContent.bind(this);
+        this.showCategoryContent = this.showCategoryContent.bind(this);
         this.filterCategories = this.filterCategories.bind(this);
         this.toggleMenu = this.toggleMenu.bind(this);
         this.goHome = this.goHome.bind(this);
@@ -42,10 +43,11 @@ export default class App extends Component {
 
         this.setState({
             'selectedMenuItem': null,
+            'currentPage': 'home'
         });
     }
 
-    showMainContent(category, categoryIcon) {
+    showCategoryContent(category, categoryIcon) {
         const categoryObj = this.props.categories.find(obj => obj['label'] === category);
 
         this.setState({
@@ -53,6 +55,7 @@ export default class App extends Component {
             'selectedMenuItemIcon': categoryIcon,
             'categorySelected': categoryObj,
             'displayedItems': categoryObj.items,
+            'currentPage': 'category'
         });
 
         this.toggleMenu();
@@ -73,7 +76,7 @@ export default class App extends Component {
             <Layout
                 {...this.props}
                 {...this.state}
-                showMainContent={this.showMainContent}
+                showCategoryContent={this.showCategoryContent}
                 filterCategories={this.filterCategories}
                 toggleMenu={this.toggleMenu}
                 goHome={this.goHome}

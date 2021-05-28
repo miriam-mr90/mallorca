@@ -86,21 +86,21 @@ const Layout = ({
     isMenuOpen,
     selectedMenuItem,
     selectedMenuItemIcon,
-    showMainContent,
+    showCategoryContent,
     title,
     toggleMenu,
     goHome,
     welcomeText,
+    currentPage
 }) => (
-    <StyledWrapper>
-        <StyledBgVideo playsInLine autoPlay muted loop poster={BackgroundImage}>
-            {/* <source src="polina.webm" type="video/webm"> */}
+    <StyledWrapper className={currentPage}>
+        {/* <StyledBgVideo playsInLine autoPlay muted loop poster={BackgroundImage}>
             <source src={BackgroundVideo} type="video/mp4" />
-        </StyledBgVideo>
+        </StyledBgVideo> */}
         <Header title={title}
             categories={categories}
             selectedMenuItem={selectedMenuItem}
-            showMainContent={showMainContent}
+            showCategoryContent={showCategoryContent}
             isMenuOpen={isMenuOpen}
             toggleMenu={toggleMenu}
             goHome={goHome}
