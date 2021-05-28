@@ -16,7 +16,6 @@ $this: '.card';
         width: calc(50% - 24px);
         margin-left: 12px;
         margin-right: 12px;
-
     }
 
     @include respond-to('tablet') {
