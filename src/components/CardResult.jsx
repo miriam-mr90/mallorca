@@ -40,8 +40,11 @@ const CardItem = ({ item }) => (
       {!isEmptyString(item.where.address) && (
         <li className="card__address">
           <i className="icon icon-pin" />
-          <a href={item.where.mapLocation} target="_blank">
-            {item.where.address}
+          <a href={item.where.mapLocation}
+            target="_blank"
+            className="link link--animated"
+          >
+            See direction
           </a>
         </li>
       )}
