@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuButton, MenuContent } from './Menu/Menu.jsx';
+import { MenuButton, MenuContent } from './Menu/Menu';
 
 const Header = ({
     title,

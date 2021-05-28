@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Title from '../components/ui/Title.jsx';
-import Cards from '../components/CardResult.jsx'
-import Filters from '../components/Filters.jsx';
+import Title from '../components/ui/Title';
+import Cards from '../components/CardResult'
+import Filters from '../components/Filters';
 
 const Results = ({
     categorySelected,

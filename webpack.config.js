@@ -1,4 +1,4 @@
-const webpack = require('webpack');
+const path = require('path');
 
 const IMAGES_RULES = {
     test: /\.(png|gif|jpg|svg)/,
@@ -35,6 +35,10 @@ module.exports = {
             FONT_RULES,
         ]
     },
-    plugins: [
-    ],
+    resolve: {
+      alias: {
+        // '@components': path.resolve(__dirname, 'src/components/'),
+      },
+      extensions: ['', '.js', '.jsx']
+    }
 };

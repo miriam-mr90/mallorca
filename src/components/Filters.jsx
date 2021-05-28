@@ -1,5 +1,5 @@
 import React from 'react';
-import Select from './ui/Select.jsx';
+import Select from './ui/Select';
 
 const Filters = ({ filters, filterCategories }) => (
     <section className="filters">

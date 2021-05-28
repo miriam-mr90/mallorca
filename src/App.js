@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './assets/icons.css';
 import './assets/stylesheets/main.scss';
-import Layout from './components/Layout.jsx';
+import Layout from './components/Layout';
 
 export default class App extends Component {
     constructor(props) {
