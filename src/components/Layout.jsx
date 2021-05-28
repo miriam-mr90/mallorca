@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components'
 
-import Header from './Header';
+import Header from './Header/Header';
 import Results from '../views/Results';
 import BackgroundImage from "../assets/images/app_bg.jpg";
 import BackgroundVideo from "../assets/images/app_bg_video.mp4";

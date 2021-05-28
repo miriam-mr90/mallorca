@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuButton, MenuContent } from './Menu/Menu';
+import { MenuButton, MenuContent } from '../Menu/Menu';
 
 const Header = ({
     title,
@@ -9,9 +9,10 @@ const Header = ({
     selectedMenuItem,
     showCategoryContent,
     goHome,
+    stickyPosition
 }) => (
     <>
-        <header className="header">
+        <header className={`header${stickyPosition ? ' header--sticky' : ''}`}>
             <h1 className="header__title" onClick={() => goHome()} >
               {title}
               <span className="header__sub-title">life</span>
