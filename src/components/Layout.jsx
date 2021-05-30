@@ -1,10 +1,8 @@
 import React from 'react';
 import styled, { css } from 'styled-components'
 
-import Header from './Header/Header';
+import Header from './Header';
 import Results from '../views/Results';
-import BackgroundImage from "../assets/images/app_bg.jpg";
-import BackgroundVideo from "../assets/images/app_bg_video.mp4";
 
 const StyledWrapper = styled.div`
     display: flex;
@@ -42,17 +40,6 @@ const StyledWelcomeText = styled.div`
     `}
 `;
 
-const StyledBgVideo = styled.video`
-    height: 100vh;
-    left: 0;
-    object-fit: cover;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: -1;
-    opacity: .6;
-`;
-
 const MainContent = ({
     categorySelected,
     selectedMenuItem,
@@ -76,7 +63,7 @@ const MainContent = ({
         );
 
     return render;
-}
+};
 
 const Layout = ({
     categories,

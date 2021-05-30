@@ -12,28 +12,10 @@ $this: '.card';
     padding: 24px 20px;
     position: relative;
 
-    @include respond-to('mobileL') {
-        width: calc(50% - 24px);
-        margin-left: 12px;
-        margin-right: 12px;
-    }
-
-    @include respond-to('tablet') {
-        width: calc(33.33% - 24px);
-    }
-
-    @include respond-to('laptop') {
-        width: calc(25% - 24px);
-    }
-
     &__wrapper {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-
-        @include respond-to('mobileL') {
-            flex-direction: row;
-        }
     }
 
     &__title {
@@ -101,5 +83,23 @@ $this: '.card';
         position: absolute;
         right: 16px;
         top: 16px;
+    }
+
+    @include respond-to('mobileL') {
+        width: calc(50% - 24px);
+        margin-left: 12px;
+        margin-right: 12px;
+
+        &__wrapper {
+            flex-direction: row;
+        }
+    }
+
+    @include respond-to('tablet') {
+        width: calc(33.33% - 24px);
+    }
+
+    @include respond-to('laptop') {
+        width: calc(25% - 24px);
     }
 }
