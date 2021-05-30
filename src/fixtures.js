@@ -41,6 +41,7 @@ module.exports = {
                     },
                     photo: 'https://www.fincallorca.com/img/beaches/18/Es_Trenc-1_1160x654_80.jpg',
                     type: ['beach'],
+                    features: [],
                     isFavorite: false,
                 },
                 {
@@ -66,6 +67,7 @@ module.exports = {
                     },
                     photo: 'https://upload.wikimedia.org/wikipedia/commons/3/32/Cala_Varques_09.jpg',
                     type: ['cove'],
+                    features: [],
                     isFavorite: false,
                 }
             ],

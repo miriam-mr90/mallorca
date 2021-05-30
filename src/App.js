@@ -65,7 +65,7 @@ export default class App extends Component {
         let displayedItemsObj = this.state.categorySelected.items;
 
         if (value !== 'all') {
-            displayedItemsObj = displayedItemsObj.filter(obj => obj[filterBy] === value );
+            displayedItemsObj = displayedItemsObj.filter(obj => obj[filterBy].includes(value));
         }
 
         this.updateState('displayedItems', displayedItemsObj);

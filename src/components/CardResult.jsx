@@ -26,7 +26,7 @@ const CardItem = ({ item }) => (
           <span>{item.type}</span>
         </li>
       }
-      {item.features && (
+      {item.features?.length > 0 && (
         <li className="card__list-item">
           Features:
           {item.features.map((item, index) => (
@@ -42,6 +42,7 @@ const CardItem = ({ item }) => (
           <i className="icon icon-pin" />
           <a href={item.where.mapLocation}
             target="_blank"
+            rel="noopener noreferrer"
             className="link link--animated"
           >
             See direction
