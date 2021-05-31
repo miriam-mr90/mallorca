@@ -1,0 +1,26 @@
+$this: '.title';
+
+#{$this} {
+    align-items: center;
+    color: $c-neutral000;
+    display: flex;
+    font-size: 26px;
+    font-weight: 600;
+    justify-content: center;
+    margin: 1.2rem auto 2rem;
+    max-width: max-content;
+    text-transform: capitalize;
+
+    .icon {
+        font-size: 30px;
+        margin-right: 1rem;
+    }
+
+    @include respond-to('mobileL') {
+        font-size: 32px;
+
+        .icon {
+            font-size: 38px;
+        }
+    }
+}
