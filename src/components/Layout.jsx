@@ -16,22 +16,17 @@ const StyledWelcomeText = styled.div`
     ${({ theme }) => css`
         align-items: center;
         align-self: center;
-        color: #FFF;
+        color: ${theme.color.neutral000};
         display: flex;
         flex-direction: column;
+        font-size: 16px;
         justify-content: center;
-        margin-top: 9.5rem;
+        line-height: 18px;
+        margin-top: 7.5rem;
         text-align: center;
 
-        button {
-            appearance: none;
-            background: ${theme.color.main};
-            border-radius: .4rem;
-            border: 0;
-            color: ${theme.color.neutral000};
+        .link {
             margin-top: 1.2rem;
-            padding: .6rem .8rem;
-            width: max-content;
         }
 
         @media ${theme.device.mobileL} {
@@ -81,9 +76,6 @@ const Layout = ({
     currentPage
 }) => (
     <StyledWrapper className={currentPage}>
-        {/* <StyledBgVideo playsInLine autoPlay muted loop poster={BackgroundImage}>
-            <source src={BackgroundVideo} type="video/mp4" />
-        </StyledBgVideo> */}
         <Header title={title}
             categories={categories}
             selectedMenuItem={selectedMenuItem}
