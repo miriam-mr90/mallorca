@@ -64,8 +64,10 @@ export default class App extends Component {
     filterCategories(filterBy, value) {
         let displayedItemsObj = this.state.categorySelected.items;
 
-        if (value !== 'all') {
-            displayedItemsObj = displayedItemsObj.filter(obj => obj[filterBy].includes(value));
+        if (value.toLowerCase() !== 'all') {
+            displayedItemsObj = displayedItemsObj.filter(obj => {
+              const itemFilters = obj[filterBy].map(item => item.toLowerCase());
+              return itemFilters.includes(value.toLowerCase())});
         }
 
         this.updateState('displayedItems', displayedItemsObj);
