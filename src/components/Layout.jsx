@@ -41,7 +41,7 @@ const MainContent = ({
     selectedMenuItemIcon,
     filterCategories,
     displayedItems,
-    welcomeText
+    welcomePage
 }) => {
     const render = selectedMenuItem !== null ? (
             <Results
@@ -52,8 +52,8 @@ const MainContent = ({
                 displayedItems={displayedItems}/>
         ) : (
             <StyledWelcomeText>
-                {welcomeText}
-                <a href="#" className="link link--animated">Link copy</a>
+                {welcomePage.text}
+                <a href={welcomePage.linkTo} className="link link--animated">{welcomePage.linkCopy}</a>
             </StyledWelcomeText>
         );
 
@@ -72,7 +72,7 @@ const Layout = ({
     title,
     toggleMenu,
     goHome,
-    welcomeText,
+    welcomePage,
     currentPage
 }) => (
     <StyledWrapper className={currentPage}>
@@ -91,7 +91,7 @@ const Layout = ({
                 selectedMenuItemIcon={selectedMenuItemIcon}
                 filterCategories={filterCategories}
                 displayedItems={displayedItems}
-                welcomeText={welcomeText}
+                welcomePage={welcomePage}
             />
         )}
     </StyledWrapper>

@@ -1,6 +1,11 @@
 module.exports = {
     title: 'Mallorca',
-    welcomeText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    welcomePage: {
+      title: '',
+      text: 'A place of idyllic landscapes where the mountains are just a step away from the beach, and the inspiration for generations of writers, musicians and painters.',
+      linkTo: '#',
+      linkCopy: 'Dummy button',
+    },
     errors: {
         'no-results': {
             title: 'Whoops!',
@@ -111,7 +116,7 @@ module.exports = {
             label: 'food',
             icon: 'food',
             filters: {
-                type: ['aaa', 'mexican', 'chiringuito'],
+                type: ['aaa', 'mexican', 'chiringuito', 'llonguets'],
             },
             items: [
                 {
@@ -123,7 +128,7 @@ module.exports = {
                         mapLocation: 'locationnnnn',
                     },
                     photo: 'https://www.hola.com/imagenes/cocina/noticiaslibros/20210303182100/raquel-sanchez-silva-restaurante-patron-lunares/0-912-395/cocacolasanchezsilva-2z-z.jpg',
-                    type: ['aaa', 'bbb'],
+                    type: ['bbb'],
                     isFavorite: true,
                 },
                 {
@@ -371,7 +376,7 @@ module.exports = {
             label: 'sup-kayak-surf',
             icon: 'surf',
             filters: {
-                features: ['surf', 'kayak', 'SUP'],
+                features: ['surf', 'kayak', 'SUP', 'diving'],
             },
             items: [
                 {
