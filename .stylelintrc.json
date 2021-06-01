@@ -20,7 +20,8 @@
       "comment-whitespace-inside": "always",
       "at-rule-empty-line-before": [
         "always", {
-          "ignoreAtRules": [ "else" ]
+          "ignoreAtRules": [ "else" ],
+          "ignore": ["inside-block"]
         }
       ],
       "block-opening-brace-space-before": "always",
