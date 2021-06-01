@@ -26,7 +26,7 @@ const StyledWelcomeText = styled.div`
         margin-top: 7.5rem;
         text-align: center;
 
-        .link {
+        .button {
             margin-top: 1.2rem;
         }
 
@@ -54,7 +54,7 @@ const MainContent = ({
         ) : (
             <StyledWelcomeText>
                 {welcomePage.text}
-                <a href={welcomePage.linkTo} className="link link--animated">{welcomePage.linkCopy}</a>
+                <button className="button">{welcomePage.linkCopy}</button>
             </StyledWelcomeText>
         );
 
