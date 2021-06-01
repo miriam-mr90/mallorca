@@ -2,6 +2,17 @@
 
 This project is temporary deployed [here](http://mallorca-life.surge.sh/) and designed for mobile resolutions
 
+## To do list:
+* Create a global app store
+* Migrate styled-components to SCSS 7-1 pattern (WIP)
+* Complete de stylelint configuration
+* Add editorconfig
+* Create a Filters component and move filters category logic from App
+* Split fixtures in different files (categories, content...)
+* Implement image loader
+* Add unit tests
+* Add multiple filters option
+* ...
 ## Available Scripts
 
 In the project directory, you can run:
