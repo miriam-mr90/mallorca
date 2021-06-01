@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components'
 
+import Footer from './Footer'
 import Header from './Header';
 import Results from '../views/Results';
 
@@ -94,6 +95,7 @@ const Layout = ({
                 welcomePage={welcomePage}
             />
         )}
+        <Footer />
     </StyledWrapper>
 );
 

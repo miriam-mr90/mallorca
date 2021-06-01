@@ -1,3 +1,13 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+$this: '.footer';
+
+#{$this} {
+    color: $c-neutral000;
+    font-size: 13px;
+    margin-top: auto;
+    padding: 30px 12px 18px;
+    text-align: center;
+}
