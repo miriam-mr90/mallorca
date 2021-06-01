@@ -2,6 +2,12 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector

@@ -18,13 +18,12 @@ $this: '.link';
         $element: &;
 
         &::after {
+            @include pseudo;
+
             background-color: currentColor;
             bottom: 0;
-            content: '';
-            display: block;
             height: 2px;
             left: 0;
-            position: absolute;
             transform-origin: right;
             transform: scaleX(0);
             transition: transform .4s ease-in-out .1s;
