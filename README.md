@@ -12,6 +12,7 @@ This project is temporary deployed [here](http://mallorca-life.surge.sh/) and de
 * Implement image loader
 * Add unit tests
 * Add multiple filters option
+* Create path aliases in webpack
 * ...
 ## Available Scripts
 
